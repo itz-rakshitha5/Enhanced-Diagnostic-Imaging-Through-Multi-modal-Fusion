@@ -1,0 +1,11 @@
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+opencv-python>=4.8
+matplotlib>=3.7
+pillow>=9.5
+scikit-image>=0.21
+pandas>=1.5
+seaborn>=0.12
+tqdm>=4.65
+kaggle>=1.5
