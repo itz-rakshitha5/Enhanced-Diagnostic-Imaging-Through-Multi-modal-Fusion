@@ -1,0 +1,141 @@
+# Setup and Execution Instructions
+
+This project implements a **Hybrid CNN–Transformer based Multi-Modal Medical Image Fusion system** for enhancing diagnostic imaging by fusing **CT and MRI images into a single enhanced image**.
+
+CNN and GAN models are included only as **baseline implementations for comparison with the proposed model**.
+
+---
+
+## 1. Prerequisites
+
+* **Python:** Version **3.9 – 3.11** recommended.
+* **Libraries:** Install all required dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+* **Development Environment (Recommended):**
+
+  * VS Code
+  * Jupyter Notebook / Google Colab
+
+---
+
+## 2. Dataset Preparation
+
+The project uses a **medical image fusion dataset containing paired CT and MRI images**.
+
+Expected dataset structure:
+
+```
+dataset/
+│
+├── CT/
+│   ├── 2004.png
+│   ├── 2005.png
+│   └── ...
+│
+└── MRI/
+    ├── 2004.png
+    ├── 2005.png
+    └── ...
+```
+
+Steps:
+
+1. Download the dataset from Kaggle or another medical imaging source.
+2. Place CT images inside the **CT** folder.
+3. Place MRI images inside the **MRI** folder.
+4. Ensure each CT image corresponds to the correct MRI image for fusion.
+
+---
+
+## 3. Running the Proposed Hybrid CNN–Transformer Model
+
+The proposed model combines:
+
+* **CNN layers** for spatial feature extraction
+* **Transformer layers** for capturing global contextual relationships
+
+Run the proposed fusion model using:
+
+```bash
+python src/capstone_2.py
+```
+
+This script performs the following operations:
+
+* Data loading and preprocessing
+* Feature extraction using CNN
+* Global context learning using Transformer
+* Feature fusion
+* Generation of fused medical images
+* Performance evaluation
+
+---
+
+## 4. Output Generation
+
+After execution, the system generates both **qualitative and quantitative results**.
+
+### Qualitative Results
+
+* Fused medical images combining CT and MRI information.
+
+### Quantitative Results
+
+The following image quality metrics are computed:
+
+* **Entropy**
+* **PSNR (Peak Signal-to-Noise Ratio)**
+* **SSIM (Structural Similarity Index)**
+* **Mutual Information**
+* **RMSE (Root Mean Square Error)**
+
+Results are stored in:
+
+```
+results/Proposed Model Results/
+```
+
+---
+
+## 5. Model Comparison
+
+To evaluate the effectiveness of the proposed method, the repository also includes implementations of:
+
+* **CNN-based Image Fusion**
+* **GAN-based Image Fusion**
+
+These models are included **only for comparative analysis** with the proposed **Hybrid CNN–Transformer fusion model**.
+
+Comparison graphs and evaluation metrics are available in:
+
+```
+results/Comparison results of Existing vs Proposed/
+```
+
+---
+
+## 6. Visualization of Results
+
+The repository contains visual outputs including:
+
+* Sample CT images
+* Sample MRI images
+* Generated fused images
+* Training loss graphs
+* Performance comparison graphs
+
+These visualizations help analyze the effectiveness of the proposed fusion method.
+
+---
+
+## 7. Demo
+
+A demonstration video explaining the workflow, implementation, and results of the project is available in:
+
+```
+demo_video_link.txt
+```
