@@ -71,18 +71,31 @@ The following preprocessing steps are applied:
 
 ---
 
-# 🏗 Model Architecture
+# 🏗️ Model Architecture: CT-MRI Image Fusion Framework
 
-The proposed model consists of **three main components**:
+This project implements a hybrid deep learning framework designed to fuse **CT** and **MRI** medical images. By combining **Convolutional Neural Networks (CNNs)** for local structural details and **Transformers** for global context, the model produces a high-fidelity fused output.
 
-### CNN Branch
-Extracts **local spatial features** from CT images using convolutional layers.
+---
 
-### Transformer Branch
-Processes MRI images and captures **global contextual relationships** using self-attention.
+## 🧩 Network Components
 
-### Feature Fusion Layer
-Combines features from the CNN and Transformer branches to generate the **final fused representation**.
+### 1. CT Branch (CNN-based)
+Focuses on **Local Feature Extraction**. CT scans contain high-frequency structural information (like bone density) that requires precise spatial mapping.
+* **Convolution Layers:** Extract hierarchical spatial features.
+* **ReLU Activation:** Introduces non-linearity to learn complex structural patterns.
+* **Local Feature Maps:** Captures fine-grained edges and textures.
+
+### 2. MRI Branch (Transformer-based)
+Focuses on **Global Feature Extraction**. MRI scans provide rich soft-tissue contrast where long-range dependencies across the image are critical.
+* **Patch Embedding:** Segments the image into patches for sequence-based processing.
+* **Multi-Head Self-Attention (MHSA):** Relates different regions of the MRI to capture overall context.
+* **Feed-Forward Network (FFN):** Refines attention-based features for deeper representation.
+
+### 3. Feature Alignment & Fusion
+This module bridges the gap between the two distinct architectural styles:
+* **1x1 Convolutions:** Used for dimensionality reduction and channel-wise alignment between the CNN and Transformer outputs.
+* **Feature Fusion:** Integrates local structural features (CT) with global contextual features (MRI) into a **Combined Feature Map**.
+* **Image Reconstruction:** A decoder stage transforms the fused map into the final **Fused Image**.
 
 ---
 
@@ -233,4 +246,5 @@ Enhanced-Diagnostic-Imaging-Through-Multi-modal-Fusion/
 • Develop **real-time clinical diagnostic systems**
 
 ---
+
 
