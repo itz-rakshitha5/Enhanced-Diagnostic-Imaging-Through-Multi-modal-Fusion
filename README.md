@@ -1,4 +1,9 @@
 # 🧠 Enhanced Diagnostic Imaging through Multi-Modal Image Fusion
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.1-orange)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN%2BTransformer-red)
+![Medical Imaging](https://img.shields.io/badge/Medical%20Imaging-CT%2BMRI-green)
+![Google Colab](https://img.shields.io/badge/Platform-Google%20Colab-blueviolet)
 ### Hybrid CNN–Transformer Architecture for Medical Image Fusion
 
 ---
@@ -246,5 +251,6 @@ Enhanced-Diagnostic-Imaging-Through-Multi-modal-Fusion/
 • Develop **real-time clinical diagnostic systems**
 
 ---
+
 
 
