@@ -48,7 +48,7 @@ The proposed method uses a **Hybrid CNN–Transformer architecture** where:
 
 ## 1️⃣ Data Collection
 
-Dataset Source: **Kaggle Medical Image Fusion Dataset**
+Dataset Source: **Havard Medical Image Fusion Datasets CT-MRI **
 
 Dataset Statistics:
 
@@ -60,8 +60,10 @@ Dataset Statistics:
 
 Example dataset images:
 
-![CT Example](images/ct_sample.png)
-![MRI Example](images/mri_sample.png)
+![CT Example](images/ct_sample.png) 
+CT Image 16003.png
+![MRI Example](images/mri_sample.png) 
+MRI Image 16003.png
 
 ---
 
@@ -249,8 +251,3 @@ Enhanced-Diagnostic-Imaging-Through-Multi-modal-Fusion/
 • Train on **larger medical datasets**  
 • Extend model to **PET-MRI or multi-modal fusion**  
 • Develop **real-time clinical diagnostic systems**
-
----
-
-
-
