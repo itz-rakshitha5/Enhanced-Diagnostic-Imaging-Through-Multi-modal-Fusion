@@ -144,7 +144,7 @@ Training Loss Progress:
 ![Training Loss](images/training_loss.png)
 
 Initial Loss ≈ **0.0358**  
-Final Loss ≈ **0.0024**
+Final Loss ≈ 0.0024
 
 Analysis:
 The training loss shows a sharp decrease during the initial epochs, indicating that the model quickly learns important features from the data.  
