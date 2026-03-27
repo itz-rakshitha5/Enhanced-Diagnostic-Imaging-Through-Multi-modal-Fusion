@@ -144,13 +144,13 @@ Training Loss Progress:
 ![Training Loss](images/training_loss.png)
 
 Initial Loss ≈ **0.0358**  
-Final Loss ≈ 0.0024
----
-**Analysis of the Training Loss:**
+Final Loss ≈ **0.0024**
+
+### Analysis of the Training Loss
+
 The training loss shows a sharp decrease during the initial epochs, indicating that the model quickly learns important features from the data.  
 After a few epochs, the loss gradually stabilizes and reaches a very low value, showing that the model has converged effectively.  
 The smooth and consistent curve indicates stable training without significant fluctuations or overfitting.
----
 # 🏆 Performance Evaluation
 
 The fused images are evaluated using several metrics.
