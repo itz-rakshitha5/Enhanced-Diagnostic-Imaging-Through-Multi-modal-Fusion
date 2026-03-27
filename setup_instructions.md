@@ -14,7 +14,7 @@ CNN and GAN models are included only as **baseline implementations for compariso
 ```bash
 pip install -r requirements.txt
 ```
-
+Make sure Python and pip are properly installed before running the project.
 * **Development Environment (Recommended):**
 
   * VS Code
