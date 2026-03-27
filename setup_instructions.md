@@ -151,3 +151,10 @@ After running the model, you should observe:
 
 ---
 
+## ⚠️ Common Issues
+
+- **File not found error** → Ensure the dataset path is correctly specified  
+- **Module not found error** → Run:
+  ```bash
+  pip install -r requirements.txt
+
