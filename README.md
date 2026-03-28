@@ -104,6 +104,8 @@ This module bridges the gap between the two distinct architectural styles:
 * **Feature Fusion:** Integrates local structural features (CT) with global contextual features (MRI) into a **Combined Feature Map**.
 * **Image Reconstruction:** A decoder stage transforms the fused map into the final **Fused Image**.
 
+* We experimented with both CPU and GPU for model training and inference. The GPU-based implementation showed significantly better performance in terms of training time and computational efficiency. This improvement is due to the GPU’s parallel processing capability, which accelerates high-dimensional image processing and deep learning operations, whereas the CPU executes tasks sequentially and is comparatively slower.
+
 ---
 
 ## Architecture Diagram
